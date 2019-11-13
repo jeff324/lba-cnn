@@ -23,7 +23,7 @@ cat('\n')
 cat('Samples will be save to ', opt$file_out)
 
 load(opt$file_in)
-
+dat = dat[[1]]
 
 dat=dat[dat$trial > 180, ]
 dat=dat[dat$response != 'timeout',]
